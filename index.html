@@ -12,13 +12,83 @@
     </div>
     <div>
         <div style="display: inline-block; width: 10%">
-            <img src="user.png" alt="Фото соискателя">
+            <img src="я.jpg" alt="Фото меня" style="width: 200px; height: 100%;">
         </div>
-        <div style="display: inline-block; width: 10%">
-            <form>
-                Ваше имя:<input type="text" name="name" value="Евгения" size="40">
+        <div style="display: inline-block; width: 30%; vertical-align: top;">
+            <form style="padding-left: 30px;">
+                <p>Ваше имя: Евгения</p>
+                <a href="https://github.com/Eva63/LevelUp/settings">Ссылка на репозиторий в GitHub</a>
+                <p>Опыт работы: нет</p>
             </form>
         </div>
+    </div>
+    <div>
+        <p>Дата собеседования:<input type="date" name="date" value="date" size="30"></p><br>
+    </div>
+    <div>
+        <p>Уровень английского:</p>
+        <p><input type="radio" name="english" value="bad">Плохо
+        <input type="radio" name="english" value="normal"checked>Средне
+        <input type="radio" name="english" value="good">Хорошо
+        <input type="radio" name="english" value="excellent">Превосходно</p>
+    </div>
+    <div>
+        <p>Ключевые навыки:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Figma</li>
+                <li>CorelDraw</li>
+                <li>3DsMax</li>
+                <li>AutoCad</li>
+                <input type="text" name="skill" value="Введите навык">
+                <input type = "submit" name = "submit" value = "Добавить в список">
+            </ul>
+    </div>
+    <div>
+        <p>Коммуникабельность:
+            <select>
+                <option disabled>Выберите значение</option>
+                <option value="Спанч Боб">Спанч Боб</option>
+                <option value="Сквидвард">Сквидвард</option>
+                <option selected value="Патрик">Патрик</option>
+                <option value="Планктон">Планктон</option>
+                <option value="Мистер Крабс">Мистер Крабс</option>
+            </select>
+        </p>
+    </div>
+    <div>
+        <p>Желаемая ЗП, тыс. руб.:
+            <input type="number" name="money" value="130">
+        </p>
+    </div>
+    <div>
+        <p>Подходит по критериям:</p>
+        <p><input type="radio" name="english" value="english">Знание английского
+            <input type="radio" name="wage" value="wage">Оклад
+            <input type="radio" name="skills" value="skills">Навыки
+            <input type="radio" name="wow" value="wow"checked>Сразу видно, что свой человек</p>
+        </p>
+    </div>
+    <div>
+        <p>Образование, курсы и т.п.</p>
+        <table border="1">
+            <tr>
+                <th>#</th>
+                <th>Сроки обучения</th>
+                <th>Наименование учебного заведения, курсов</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2006-2012</td>
+              <td>ХГТУ по специальности Архитектор</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2018</td>
+                <td>Коннессанс. Курс сметное дело в строительстве</td>
+              </tr>
+          </table>
     </div>
 </body>
 </html>
