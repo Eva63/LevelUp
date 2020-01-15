@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
     <div>
         <h1>Вакансия: Junior Frontend Developer</h1>
@@ -15,17 +16,17 @@
             <img src="я.jpg" alt="Фото меня" style="width: 200px; height: 100%;">
         </div>
         <div style="display: inline-block; width: 30%; vertical-align: top;">
-            <form style="padding-left: 30px;">
-                <p>Ваше имя: Евгения</p>
-                <a href="https://github.com/Eva63/LevelUp/settings">Ссылка на репозиторий в GitHub</a>
-                <p>Опыт работы: нет</p>
+            <form class="top-block">
+                <p class="name" style="color:rgb(126, 8, 161); font-size: 1.1em;">Ваше имя: Евгения</p>
+                <a class="button" href="https://github.com/Eva63/LevelUp/settings">Ссылка на репозиторий в GitHub</a>
+                <p class="experience">Опыт работы: нет</p>
             </form>
         </div>
     </div>
     <div>
-        <p>Дата собеседования:<input type="date" name="date" value="date" size="30"></p><br>
+        <p>Дата собеседования:<input class="date" type="date" name="date" value="date" size="30"></p><br>
     </div>
-    <div>
+    <div class="english">
         <p>Уровень английского:</p>
         <p><input type="radio" name="english" value="bad">Плохо
         <input type="radio" name="english" value="normal"checked>Средне
@@ -34,16 +35,16 @@
     </div>
     <div>
         <p>Ключевые навыки:</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Figma</li>
-                <li>CorelDraw</li>
-                <li>3DsMax</li>
-                <li>AutoCad</li>
-                <input type="text" name="skill" value="Введите навык">
-                <input type = "submit" name = "submit" value = "Добавить в список">
-            </ul>
+        <ul>
+            <li>HTML</li>
+            <li id="css">CSS</li>
+            <li>Figma</li>
+            <li>CorelDraw</li>
+            <li>3DsMax</li>
+            <li>AutoCad</li>
+            <input type="text" name="skill" value="Введите навык">
+            <input type = "submit" name = "submit" value = "Добавить в список">
+        </ul>
     </div>
     <div>
         <p>Коммуникабельность:
@@ -59,7 +60,7 @@
     </div>
     <div>
         <p>Желаемая ЗП, тыс. руб.:
-            <input type="number" name="money" value="130">
+            <input type="number" name="money" value="Введите значение">
         </p>
     </div>
     <div>
@@ -72,7 +73,7 @@
     </div>
     <div>
         <p>Образование, курсы и т.п.</p>
-        <table border="1">
+        <table border="1" cellpadding="10" cellspacing="0">
             <tr>
                 <th>#</th>
                 <th>Сроки обучения</th>
@@ -81,14 +82,14 @@
             <tr>
               <td>1</td>
               <td>2006-2012</td>
-              <td>ХГТУ по специальности Архитектор</td>
+              <td class="place">ХГТУ по специальности Архитектор</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>2018</td>
-                <td>Коннессанс. Курс сметное дело в строительстве</td>
+                <td class="place">Коннессанс. Курс сметное дело в строительстве</td>
               </tr>
-          </table>
+        </table>
     </div>
 </body>
 </html>
